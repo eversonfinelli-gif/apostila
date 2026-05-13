@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Apostila de Direito Administrativo de Alta Fusão - PRF</title>
+    <style>
+        /* CONFIGURAÇÃO DA IDENTIDADE VISUAL MILITAR/POLICIAL AVANÇADA */
+        body { 
+            font-family: 'Segoe UI', Arial, sans-serif; 
+            line-height: 1.7; 
+            color: #222; 
+            max-width: 850px; 
+            margin: 0 auto; 
+            padding: 40px 20px; 
+            background-color: #f4f6f4;
+            animation: fadeInPage 1s ease-in-out;
+        }
+
+        @keyframes fadeInPage {
+            from { opacity: 0; transform: translateY(10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        h1 { 
+            color: #112d13; 
+            border-bottom: 4px solid #1e3f20; 
+            padding-bottom: 15px; 
+            text-transform: uppercase; 
+            font-size: 32px; 
+            text-align: center;
+            letter-spacing: 1px;
+            text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
+        }
+        h2 { 
+            color: #224d25; 
+            margin-top: 45px; 
+            font-size: 24px; 
+            border-bottom: 2px solid #cbdccb; 
+            padding-bottom: 8px;
+        }
+        h3 { 
+            color: #444; 
+            font-size: 15px; 
+            margin-top: 25px; 
+            text-transform: uppercase; 
+            letter-spacing: 1px; 
+            background: #e2ebe2;
+            padding: 4px 10px;
+            border-radius: 3px;
+            display: inline-block;
+        }
+        
+        .box-importante { 
+            background-color: #ebf3eb; 
+            border-left: 6px solid #2d5a31; 
+            padding: 18px; 
+            margin: 25px 0; 
+            border-radius: 0 8px 8px 0; 
+            font-weight: 500;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.04);
+            transition: all 0.3s ease;
+        }
+        .box-importante:hover {
+            transform: scale(1.01);
+            box-shadow: 0 4px 12px rgba(45, 90, 49, 0.15);
+            background-color: #f3f7f3;
+        }
+
+        .box-atencao { 
+            background-color: #fff6f6; 
+            border-left: 6px solid #c53030; 
+            padding: 18px; 
+            margin: 25px 0; 
+            border-radius: 0 8px 8px 0;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.04);
+            transition: all 0.3s ease;
+        }
+        .box-atencao:hover {
+            transform: scale(1.01);
+            box-shadow: 0 4px 12px rgba(197, 48, 48, 0.15);
+            background-color: #fff9f9;
+        }
+
+        .box-lei {
+            background-color: #24292e;
+            border-left: 6px solid #e1b12c;
+            color: #f1f2f6;
+            padding: 20px;
+            margin: 25px 0;
+            border-radius: 4px;
+            font-family: 'Consolas', 'Courier New', Courier, monospace;
+            font-size: 13.5px;
+            line-height: 1.6;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        }
+        .box-lei b { color: #fbc531; }
+
+        .box-memorando {
+            background-color: #ffffff;
+            border: 1px dashed #7f8c8d;
+            border-left: 6px solid #7f8c8d;
+            padding: 20px;
+            margin: 25px 0;
+            font-family: 'Courier New', Courier, monospace;
+            font-size: 13px;
+            color: #2c3e50;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.02);
+        }
+        .box-memorando .cabecalho-memo { text-align: center; font-weight: bold; margin-bottom: 15px; text-transform: uppercase; }
+
+        .box-resumo {
+            background-color: #fffdf0;
+            border-left: 6px solid #f1c40f;
+            padding: 15px 20px;
+            margin: 25px 0;
+            border-radius: 4px;
+        }
+        .box-resumo ul { margin: 5px 0 0 0; padding-left: 20px; font-size: 14px; }
+        
+        table { 
+            width: 100%; 
+            border-collapse: collapse; 
+            margin: 25px 0; 
+            background: #fff; 
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.06); 
+        }
+        th { 
+            background: linear-gradient(135deg, #1e3f20, #2d5a31); 
+            color: white; 
+            padding: 14px; 
+            text-align: left; 
+            font-size: 14px; 
+            text-transform: uppercase; 
+        }
+        td { 
+            padding: 14px; 
+            border-bottom: 1px solid #eee; 
+            font-size: 14.5px; 
+            vertical-align: top; 
+        }
+        tr:nth-child(even) { background-color: #fcfdfe; }
+        tr:hover td { 
+            background-color: #f1f6f1; 
+            color: #112d13;
+            font-weight: 500;
+        }
+
+        .questao { 
+            background: #fff; 
+            border: 1px solid #e1e4e6; 
+            padding: 20px; 
+            margin-bottom: 20px; 
+            border-radius: 8px; 
+            box-shadow: 0 3px 10px rgba(0,0,0,0.03);
+        }
+        .gabarito { 
+            background: linear-gradient(90deg, #eaf2eb, #f4f8f5); 
+            border-left: 4px solid #2d5a31; 
+            padding: 12px 15px; 
+            margin-top: 15px; 
+            font-weight: bold; 
+            color: #1e3f20; 
+        }
+        .comentario { 
+            font-size: 14px; 
+            color: #555; 
+            margin-top: 10px; 
+            padding-left: 5px;
+            border-left: 2px dashed #cbdccb;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Direito Administrativo de Alta Fusão - PRF</h1>
+
+    <!-- TÓPICO: PRINCÍPIOS -->
+    <h2>1. Princípios Fundamentais (O Mnemônico L.I.M.P.E.)</h2>
+    <p>Os princípios constitucionais funcionam como pilares obrigatórios para a validade de qualquer ato da Administração Pública.</p>
+
+    <div class="box-lei">
+        📜 <b>CONSTITUIÇÃO FEDERAL, ART. 37, CAPUT:</b><br>
+        A administração pública direta e indireta de qualquer dos Poderes da União, dos Estados, do Distrito Federal e dos Municípios obedecerá aos princípios de <b>legalidade, impessoalidade, moralidade, publicidade e eficiência</b> [...].
+    </div>
+
+    <div class="box-importante">
+        🧠 <b>DISSECAÇÃO TÉCNICA (EXPLICAÇÃO):</b><br>
+        Os princípios dividem-se em explícitos (expressos na CF) e implícitos (subentendidos, como a Proporcionalidade). Ambos possuem exatamente a mesma força jurídica no momento da aplicação de penalidades ao servidor.
+    </div>
+
+    <div class="box-resumo">
+        ⚡ <b>RESUMO DA FIXAÇÃO:</b>
+        <ul>
+            <li><b>Legalidade:</b> Administrador só faz o que a lei expressamente autoriza.</li>
+            <li><b>Impessoalidade:</b> Vedada a promoção pessoal do agente em propagandas ou obras estatais.</li>
+            <li><b>Eficiência:</b> Obter o rendimento ótimo com a menor dilapidação de recursos financeiros.</li>
+        </ul>
+    </div>
+
+    <div class="box-memorando">
+        <div class="cabecalho-memo">MINISTÉRIO DA JUSTIÇA | POLÍCIA RODOVIÁRIA FEDERAL</div>
+        <b>MEMORANDO Nº 012/2026/GAB-SUP/RJ</b><br>
+        <b>Para:</b> Todos os Chefes de Delegacias PRF/RJ<br>
+        <b>Assunto:</b> Vedação de Promoção Pessoal em Redes Sociais Institucionais<br><br>
+        1. Com fulcro no princípio constitucional da Impessoalidade, determino que as postagens em redes sociais oficiais desta Superintendência abstenham-se de veicular nomes, marcas ou imagens de autoridades políticas e policiais associadas a entregas operacionais.<br>
+        <i>[Assinado Eletronicamente] - Superintendente Regional da PRF</i>
+    </div>
+
+    <div class="box-atencao">
+        💡 <b>EXEMPLO PRÁTICO:</b><br>
+        Se um Prefeito pintar todas as escolas da cidade com as cores do seu partido político, haverá violação direta ao Princípio da Impessoalidade, configurando desvio de finalidade.
+    </div>
+
+    <div class="questao">
+        <b>01. Simulado Inédito:</b> A utilização da logomarca pessoal de um agente público em viaturas recém-adquiridas atenta contra o princípio da impessoalidade.
+        <div class="gabarito">Gabarito: Correto</div>
+        <div class="comentario"><b>Comentário:</b> Perfeito. Viola a impessoalidade qualquer ato que desvie a finalidade pública para gerar autopromoção de autoridades ou servidores.</div>
+    </div>
+
+
+    <!-- TÓPICO: ORGANIZAÇÃO -->
+    <h2>2. Organização Administrativa (Centralização vs Descentralização)</h2>
+    <p>Forma como o Estado distribui suas competências para prestar serviços de interesse público à sociedade.</p>
+
+    <div class="box-lei">
+        📜 <b>DECRETO-LEI Nº 200/1967, ART. 4º:</b><br>
+        A Administração Federal compreende:<br>
+        <b>I - A Administração Direta</b>, que se constitui dos serviços integrados na estrutura da Presidência e Ministérios.<br>
+        <b>II - A Administração Indireta</b>, que compreende as seguintes entidades dotadas de personalidade jurídica própria: a) Autarquias; b) Empresas Públicas; c) Sociedades de Economia Mista; d) Fundações Públicas.
+    </div>
+
+    <div class="box-importante">
+        🧠 <b>DISSECAÇÃO TÉCNICA (EXPLICAÇÃO):</b><br>
+        A distribuição interna de tarefas dentro da mesma pessoa jurídica gera <b>Órgãos</b> (Desconcentração). A transferência de atividades para uma nova pessoa jurídica externa gera <b>Entidades</b> (Descentralização).
+    </div>
+
+    <div class="box-resumo">
+        ⚡ <b>RESUMO DA FIXAÇÃO:</b>
+        <ul>
+            <li><b>DesconOntração:</b> Cria Órgãos (relação interna com hierarquia estrita).</li>
+            <li><b>DescentrEalização:</b> Cria Entidades (relação externa, sem hierarquia, sujeita a tutela).</li>
+        </ul>
+    </div>
+
+    <div class="box-memorando">
+        <div class="cabecalho-memo">MINISTÉRIO DA JUSTIÇA | POLÍCIA RODOVIÁRIA FEDERAL</div>
+        <b>MEMORANDO Nº 089/2026/DIROP/PRF</b><br>
+        <b>Para:</b> Setor de Engenharia de Tráfego<br>
+        <b>Assunto:</b> Criação de Núcleo Interno Operacional Especializado<br><br>
+        1. Para fins de otimização de policiamento, fica instituído o Núcleo de Resposta Rápida (NRR) subordinado a esta Diretoria Operacional, configurando processo de desconcentração administrativa para divisão técnica de encargos.<br>
+        <i>[Assinado Eletronicamente] - Diretor de Operações</i>
+    </div>
+
+    <div class="box-atencao">
+        💡 <b>EXEMPLO PRÁTICO:</b><br>
+        A Polícia Rodoviária Federal é um <b>órgão</b> da União (desconcentração). Já o INSS é uma autarquia, logo, uma <b>entidade</b> (descentralização).
+    </div>
+
+    <div class="questao">
+        <b>02. Simulado Inédito:</b> A instituição de uma nova delegacia regional da PRF caracteriza uma descentralização administrativa.
+        <div class="gabarito">Gabarito: Errado</div>
+        <div class="comentario"><b>Comentário:</b> Trata-se de <b>desconcentração</b>, visto que delegacias são desmembramentos internos (órgãos) da estrutura única da União.</div>
+    </div>
+
+
+    <!-- TÓPICO: ATOS -->
+    <h2>3. Atos Administrativos</h2>
+    <p>Ato administrativo é a declaração do Estado que produz efeitos jurídicos imediatos, sob regime de direito público.</p>
+
+    <div class="box-lei">
+        📜 <b>LEI Nº 4.717/1965, ART. 2º:</b><br>
+        São nulos os atos lesivos ao patrimônio público nos casos de vício de: <b>incompetência, vício de forma, ilegalidade do objeto, inexistência dos motivos e desvio de finalidade</b>.
+    </div>
+
+    <div class="box-importante">
+        🧠 <b>DISSECAÇÃO TÉCNICA (EXPLICAÇÃO):</b><br>
+        O mnemônico <b>CO-FI-FO-MO-OB</b> delimita os requisitos de validade. A competência, a finalidade e a forma são sempre elementos vinculados (definidos em lei). O motivo e o objeto podem ser discricionários.
+    </div>
+
+    <div class="box-resumo">
+        ⚡ <b>RESUMO DA FIXAÇÃO:</b>
+        <ul>
+            <li><b>Presunção de Legitimidade:</b> Todo ato nasce considerado legal até prova em contrário.</li>
+            <li><b>Imperatividade:</b> Imposição de obrigações ao particular independentemente do seu aval.</li>
+            <li><b>Autoexecutoriedade:</b> Execução imediata pela Administração sem aval prévio do Judiciário.</li>
+        </ul>
+    </div>
+
+    <div class="box-memorando">
+        <div class="cabecalho-memo">POLÍCIA RODOVIÁRIA FEDERAL | SUPERINTENDÊNCIA REGIONAL</div>
+        <b>PORTARIA DE APREENSÃO Nº 114/2026/PRF</b><br>
+        <b>Para:</b> Depósito de Veículos Retidos<br>
+        <b>Assunto:</b> Apreensão de Carga por Fraude Fiscal Transcorrente<br><br>
+        1. Em cumprimento ao poder de polícia adstrito a este departamento, determino a imediata retenção e reboque do veículo automotor placa XXX-0000, com fulcro no vício documental verificado em fiscalização rodoviária ativa.<br>
+        <i>[Assinado Eletronicamente] - Agente da Autoridade de Trânsito</i>
+    </div>
+
+    <div class="box-atencao">
+        💡 <b>EXEMPLO PRÁTICO:</b><br>
+        A aplicação de uma multa de trânsito pela PRF é um ato que goza de <b>imperatividade</b>. A remoção de um caminhão tombado bloqueando a via goza de <b>autoexecutoriedade</b>.
+    </div>
+
+    <div class="questao">
+        <b>03. Simulado Inédito:</b> A Administração Pública necessita de prévia autorização judicial para demolir um imóvel particular que ameace desabar sobre uma rodovia federal.
+        <div class="gabarito">Gabarito: Errado</div>
+        <div class="comentario"><b>Comentário:</b> O atributo da <b>autoexecutoriedade</b> resguarda a prerrogativa estatal de agir preventivamente para conter riscos iminentes sem intervenção prévia do Judiciário.</div>
+    </div>
+
+
+    <!-- TÓPICO: RESPONSABILIDADE -->
+    <h2>4. Responsabilidade Civil do Estado</h2>
+    <p>Obrigação que a Administração Pública possui de indenizar os danos patrimoniais causados a terceiros por atos de seus agentes.</p>
+
+    <div class="box-lei">
+        📜 <b>CONSTITUIÇÃO FEDERAL, ART. 37, § 6º:</b><br>
+        As pessoas jurídicas de direito público e as de direito privado prestadoras de serviços públicos responderão pelos danos que seus agentes, nessa qualidade, causarem a terceiros, assegurado o direito de regresso contra o responsável nos casos de <b>dolo ou culpa</b>.
+    </div>
+
+    <div class="box-importante">
+        🧠 <b>DISSECAÇÃO TÉCNICA (EXPLICAÇÃO):</b><br>
+        O Brasil adota a <b>Teoria do Risco Administrativo</b> (Responsabilidade Objetiva). A vítima deve provar unicamente o nexo causal (liame) entre o fato estatal e o prejuízo sofrido. Não há necessidade de provar culpa ou dolo do Estado.
+    </div>
+
+    <div class="box-resumo">
+        ⚡ <b>RESUMO DA FIXAÇÃO:</b>
+        <ul>
+            <li><b>Ação da Vítima:</b> Processa a Entidade Pública (Responsabilidade Objetiva).</li>
+            <li><b>Ação de Regresso:</b> O Estado processa o Agente (Responsabilidade Subjetiva - exige Dolo ou Culpa).</li>
+            <li><b>Excludentes:</b> Culpa exclusiva da vítima, caso fortuito ou força maior quebram o nexo causal.</li>
+        </ul>
+    </div>
+
+    <div class="box-memorando">
+        <div class="cabecalho-memo">ADVOCACIA-GERAL DA UNIÃO | CONSULTORIA JURÍDICA</div>
+        <b>PARECER TÉCNICO Nº 702/2026/AGU</b><br>
+        <b>Para:</b> Setor de Finanças e Pagamentos de Indenizações<br>
+        <b>Assunto:</b> Acordo Extrajudicial por Colisão de Viatura da PRF<br><br>
+        1. Tendo em vista o boletim de ocorrência demonstrando que viatura funcional colidiu na traseira de veículo civil parado no acostamento, resta configurada a responsabilidade objetiva da União, sendo juridicamente viável o pagamento da indenização cabível.<br>
+        <i>[Assinado Eletronicamente] - Advogado da União</i>
+    </div>
+
+    <div class="box-atencao">
+        💡 <b>EXEMPLO PRÁTICO:</b><br>
+        Se uma viatura da PRF, em perseguição policial em alta velocidade, colidir contra o muro de uma residência particular, a União será obrigada a pagar os reparos de forma <b>objetiva</b>.
+    </div>
+
+    <div class="questao">
+        <b>04. Simulado Inédito:</b> Para obter reparação por danos materiais decorrentes de conduta de policial federal, o cidadão deve comprovar que o servidor agiu de forma imprudente.
+        <div class="gabarito">Gabarito: Errado</div>
+        <div class="comentario"><b>Comentário:</b> Errado. A responsabilidade do Estado é objetiva, o que dispensa o particular do ônus de provar a imprudência, negligência ou imperícia (culpa) do agente público.</div>
+    </div>
+
+
+    <!-- TÓPICO: IMPROBIDADE -->
+    <h2>5. Improbidade Administrativa (Lei nº 8.429/1992)</h2>
+    <p>Ilícitos de natureza civil aplicados aos agentes públicos que violam os deveres éticos da função pública.</p>
+
+    <div class="box-lei">
+        📜 <b>LEI Nº 8.429/1992, ART. 1º, § 2º:</b><br>
+        Considera-se dolo o elemento subjetivo necessário para a configuração do ato de improbidade administrativa, caracterizado pela <b>vontade livre e consciente</b> de alcançar o resultado ilícito [...], não bastando a voluntariedade do agente.
+    </div>
+
+    <div class="box-importante">
+        🧠 <b>DISSECAÇÃO TÉCNICA (EXPLICAÇÃO):</b><br>
+        A reforma trazida pela Lei nº 14.230/2021 **extinguiu completamente a modalidade culposa**. Atualmente, qualquer ato de improbidade exige a presença inequívoca de **dolo específico** do agente. O erro administrativo comum sem dolo não configura ato ímprobo.
+    </div>
+
+    <div class="box-resumo">
+        ⚡ <b>RESUMO DA FIXAÇÃO:</b>
+        <ul>
+            <li><b>Art. 9º (Enriquecimento Ilícito):</b> Obtenção de vantagem financeira (Suspensão de direitos políticos: até 14 anos).</li>
+            <li><b>Art. 10 (Prejuízo ao Erário):</b> Dano aos cofres públicos (Suspensão de direitos políticos: até 12 anos).</li>
+            <li><b>Art. 11 (Violação a Princípios):</b> Desrespeito à ética pública (Não acarreta mais suspensão de direitos políticos).</li>
+        </ul>
+    </div>
+
+    <div class="box-memorando">
+        <div class="cabecalho-memo">POLÍCIA RODOVIÁRIA FEDERAL | CORREGEDORIA-GERAL</div>
+        <b>DESPACHO DE ENCAMINHAMENTO DE PAD Nº 331/2026</b><br>
+        <b>Para:</b> Ministério Público Federal (MPF)<br>
+        <b>Assunto:</b> Remessa de Provas de Enriquecimento Ilícito de Servidor<br><br>
+        1. Encaminho o Relatório Final do Processo Administrativo Disciplinar em anexo, onde restou cabalmente provado que o servidor utilizou maquinário e mão de obra de empresa terceirizada contratada pela União em sua fazenda particular, consubstanciando dolo específico capitulado no art. 9º da Lei nº 8.429/92.<br>
+        <i>[Assinado Eletronicamente] - Corregedor-Geral da PRF</i>
+    </div>
+
+    <div class="box-atencao">
+        💡 <b>EXEMPLO PRÁTICO:</b><br>
+        O policial rodoviário federal que exige ou recebe propina para liberar um veículo de carga irregular comete ato de improbidade por **Enriquecimento Ilícito** (Art. 9º).
+    </div>
+
+    <div class="questao">
+        <b>05. Simulado Inédito:</b> Servidor público federal que por imperícia cause prejuízo de grande monta ao patrimônio da autarquia em que atua responderá por improbidade culposa.
+        <div class="gabarito">Gabarito: Errado</div>
+        <div class="comentario"><b>Comentário:</b> Após as modificações legais vigentes, a modalidade culposa foi abolida. Atos derivados de imperícia ou negligência são apurados administrativamente, mas não geram sanções por improbidade.</div>
+    </div>
+
+
+    <!-- TÓPICO: LICITAÇÕES -->
+    <h2>6. Licitações e Contratos Administrativos (Lei nº 14.133/2021)</h2>
+    <p>Procedimento pelo qual a Administração seleciona a proposta mais vantajosa para contratações públicas.</p>
+
+    <div class="box-lei">
+        📜 <b>LEI Nº 14.133/2021, ART. 28:</b><br>
+        São modalidades de licitação: <b>I - pregão; II - concorrência; III - concurso; IV - leilão; V - diálogo competitivo</b>. Parágrafo único. É vedada a criação de outras modalidades de licitação ou a combinação das referidas.
+    </div>
+
+    <div class="box-importante">
+        🧠 <b>DISSECAÇÃO TÉCNICA (EXPLICAÇÃO):</b><br>
+        A nova legislação extinguiu a *Tomada de Preços* e o *Convite*. O **Leilão** passou a reger a venda de qualquer bem público desincorporado (seja móvel ou imóvel), eliminando as amarras burocráticas antigas. O **Diálogo Competitivo** surge para soluções tecnológicas ou complexas sem precedentes de mercado.
+    </div>
+
+    <div class="box-resumo">
+        ⚡ <b>RESUMO DA FIXAÇÃO:</b>
+        <ul>
+            <li><b>Pregão:</b> Modalidade obrigatória para bens e serviços comuns.</li>
+            <li><b>Inexigibilidade:</b> Inviabilidade de competição (Fornecedor exclusivo, artista consagrado, serviços intelectuais singulares).</li>
+            <li><b>Dispensa:</b> Competição viável, mas a lei autoriza não licitar (Baixo valor, emergências).</li>
+        </ul>
+    </div>
+
+    <div class="box-memorando">
+        <div class="cabecalho-memo">MINISTÉRIO DA JUSTIÇA | POLÍCIA RODOVIÁRIA FEDERAL</div>
+        <b>MEMORANDO Nº 452/2026/DIROPI/PRF</b><br>
+        <b>Para:</b> Superintendências Regionais da PRF<br>
+        <b>Assunto:</b> Padronização de Compras via Pregão Eletrônico<br><br>
+        1. Determino que todas as aquisições de materiais correntes de consumo no âmbito desta regional passem a adotar, obrigatoriamente, a modalidade <b>Pregão</b>, em sua forma eletrônica, conforme rito do art. 29 da Lei nº 14.133/2021.<br>
+        <i>[Assinado Eletronicamente] - Diretor de Administração e Logística</i>
+    </div>
+
+    <div class="box-atencao">
+        💡 <b>EXEMPLO PRÁTICO:</b><br>
+        Se a PRF decidir contratar uma empresa para construir o seu novo complexo de estandes de tiro com tecnologia alemã inédita no país, ela poderá utilizar a modalidade **Diálogo Competitivo** para traçar a melhor modelagem contratual técnica.
+    </div>
+
+    <div class="questao">
+        <b>06. Simulado Inédito:</b> Sob a égide da Lei nº 14.133/2021, a alienação de bens imóveis da Administração exige a realização de procedimento licitatório obrigatoriamente sob a modalidade Concorrência.
+        <div class="gabarito">Gabarito: Errado</div>
+        <div class="comentario"><b>Comentário:</b> Sob a nova lei, a alienação (venda) de qualquer espécie de bem público — móvel ou imóvel — será realizada sob a modalidade de <b>Leilão</b>.</div>
+    </div>
+
+
+    <!-- TÓPICO: LEI 8112 -->
+    <h2>7. Agentes Públicos e Regime Jurídico Único (Lei nº 8.112/1990)</h2>
+    <p>Regula os direitos, deveres, provimentos e vacâncias dos servidores civis da União.</p>
+
+    <div class="box-lei">
+        📜 <b>LEI Nº 8.112/1990, ART. 13:</b><br>
+        A posse dar-se-á pela assinatura do respectivo termo [...]. § 1º A posse ocorrerá no prazo de <b>trinta dias</b> contados da publicação do ato de provimento. Art. 15, § 1º É de <b>quinze dias</b> o prazo para o servidor empossado em cargo público entrar em exercício, contados da posse.
+    </div>
+
+    <div class="box-importante">
+        🧠 <b>DISSECAÇÃO TÉCNICA (EXPLICAÇÃO):</b><br>
+        Guarde os prazos gatilho fundamentais: Nomeação -> Posse (30 dias). Posse -> Exercício (15 dias). Se o candidato for nomeado e perder o prazo da posse, o ato de nomeação será tornado **sem efeito**. Se tomar posse, mas perder o prazo de exercício, será **exonerado**.
+    </div>
+
+    <div class="box-resumo">
+        ⚡ <b>RESUMO DA FIXAÇÃO:</b>
+        <ul>
+            <li><b>Reintegração:</b> Retorno do servidor estável após demissão ilegal ser anulada por via judicial ou administrativa.</li>
+            <li><b>Reversão:</b> Retorno do aposentado por invalidez quando a junta oficial atesta a cessação da incapacidade.</li>
+            <li><b>Recondução:</b> Retorno do servidor estável ao cargo anterior em decorrência de inabilitação em estágio probatório de outro cargo.</li>
+        </ul>
+    </div>
+
+    <div class="box-memorando">
+        <div class="cabecalho-memo">POLÍCIA RODOVIÁRIA FEDERAL | COORDENAÇÃO DE RECURSOS HUMANOS</div>
+        <b>PORTARIA DE REINTEGRAÇÃO Nº 204/2026/CRH</b><br>
+        <b>Para:</b> Setor de Cadastro e Folha de Pagamento<br>
+        <b>Assunto:</b> Cumprimento de Sentença Judicial Transitada em Julgado<br><br>
+        1. Em estrito cumprimento à ordem judicial emanada nos autos do processo nº XXXX, determino a imediata <b>reintegração</b> do servidor XXXXX ao cargo de Policial Rodoviário Federal, restabelecendo-se as vantagens remuneratórias retroativas devidas.<br>
+        <i>[Assinado Eletronicamente] - Coordenador de Recursos Humanos</i>
+    </div>
+
+    <div class="box-atencao">
+        💡 <b>EXEMPLO PRÁTICO:</b><br>
+        Se um PRF sofrer um grave acidente, for aposentado por invalidez e, cinco anos depois, uma junta médica oficial atestar que ele está totalmente curado, ele retornará à atividade por meio do instituto da **Reversão**.
+    </div>
+
+    <div class="questao">
+        <b>07. Simulado Inédito:</b> Caso um servidor estatutário estável decida retornar ao seu cargo anterior em virtude de sua reprovação no estágio probatório de uma nova carreira pública, dar-se-á o provimento derivado por reversão.
+        <div class="gabarito">Gabarito: Errado</div>
+        <div class="comentario"><b>Comentário:</b> O retorno de servidor estável ao cargo anteriormente ocupado devido à reprovação em estágio probatório de outro cargo denomina-se <b>Recondução</b>. Reversão é o retorno do aposentado.</div>
+    </div>
+
+
+    <!-- TÓPICO: LEI 9784 -->
+    <h2>8. Processo Administrativo Federal (Lei nº 9.784/1999)</h2>
+    <p>Estabelece normas básicas sobre o processo administrativo na esfera da Administração Federal Direta e Indireta.</p>
+
+    <div class="box-lei">
+        📜 <b>LEI Nº 9.784/1999, ART. 11:</b><br>
+        Não podem ser objeto de delegação: <b>I - a edição de atos de caráter normativo; II - a decisão de recursos administrativos; III - as matérias de competência exclusiva do órgão ou autoridade</b>.
+    </div>
+
+    <div class="box-importante">
+        🧠 <b>DISSECAÇÃO TÉCNICA (EXPLICAÇÃO):</b><br>
+        A delegação consiste na transferência temporária de competência a outra autoridade por razões de eficiência técnica e **não exige relação de hierarquia** (pode ser horizontal). A avocação consiste em chamar para si competência de um subordinado e é **estritamente vertical e excepcional**.
+    </div>
+
+    <div class="box-resumo">
+        ⚡ <b>RESUMO DA FIXAÇÃO:</b>
+        <ul>
+            <li><b>Impedimento:</b> Situação de ordem objetiva (Ex: cônjuge é interessado). Proibido atuar, sob pena de falta grave.</li>
+            <li><b>Suspeição:</b> Situação subjetiva (Ex: amizade íntima ou inimizade notória). Deve ser alegada pela parte ou declarada.</li>
+        </ul>
+    </div>
+
+    <div class="box-memorando">
+        <div class="cabecalho-memo">MINISTÉRIO DA JUSTIÇA | POLÍCIA RODOVIÁRIA FEDERAL</div>
+        <b>PORTARIA DE DELEGAÇÃO DE COMPETÊNCIA Nº 055/2026</b><br>
+        <b>Para:</b> Chefias de Divisão de Logística Regional<br>
+        <b>Assunto:</b> Delegação para Assinatura de Contratos de Manutenção Local<br><br>
+        1. Com fulcro no art. 12 da Lei nº 9.
+
+
+
